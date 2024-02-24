@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="(3)profilecard_style.css">
+</head>
+<body>
+  <div class = "container-page3">
+  <div class="main">
+          <!-- NAVBAR -->
+          <section class="top-nav">
+            <div class ="icon">
+                <img src="pics/logo_netflix.png">
+            </div>
+               <ul class="menu">
+                <li><a href="(1)homepage.html">HOME</a></li>
+                <li><a href="(2)loginpage.html">LOGIN</a></li>
+                <li><a href="(3)profilecards.html">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+          </section>
+        <!-- END NAVBAR -->
+
+        
+<!--  CARD -->
+  <!------------------------------------------------>
+  <div class="title">
+    <h1>Who's Watching?</h1>
+<!-- PROFILE CARD CONTAINER -->
+<div class="wrapper-card">
+
+  <!-- PROFILE CARD 1 -->
+  <div class="profile-card">
+    <div class="image">
+      <img src="pics/profile1.jpg">
+      <div class="overlay">
+        <button class="view-details" onclick="redirectToDetailsPage(1)">View Details</button>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Christoper</h3>
+      <p class="desc">WGG IT 2024</p>
+    </div>
+  </div>
+
+  <!-- PROFILE CARD 2 -->
+  <div class="profile-card">
+    <div class="image">
+      <img src="pics/profile2.jpg"> <!-- Change the image source accordingly -->
+      <div class="overlay">
+        <button class="view-details" onclick="redirectToDetailsPage(2)">View Details</button>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Darrel</h3>
+      <p class="desc">WGG IT 2024</p>
+    </div>
+  </div>
+
+  <!-- PROFILE CARD 3 -->
+  <div class="profile-card">
+    <div class="image">
+      <img src="pics/profile3.jpg"> 
+      <div class="overlay">
+        <button class="view-details" onclick="redirectToDetailsPage(3)">View Details</button>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Nico</h3>
+      <p class="desc">WGG IT 2024</p>
+    </div>
+  </div>
+
+  <!-- PROFILE CARD 4 -->
+  <div class="profile-card">
+    <div class="image">
+      <img src="pics/profile4.jpg"> 
+      <div class="overlay">
+        <button class="view-details" onclick="redirectToDetailsPage(4)">View Details</button>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Elizabeth</h3>
+      <p class="desc">WGG IT 2024</p>
+    </div>
+  </div>
+
+  <!-- PROFILE CARD 5 -->
+  <div class="profile-card">
+    <div class="image">
+      <img src="pics/profile5.jpg"> 
+      <div class="overlay">
+        <button class="view-details" onclick="redirectToDetailsPage(5)">View Details</button>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Ivan</h3>
+      <p class="desc">WGG IT 2024</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<!-- FUNCTION REDIRECT -->
+<script>
+  function redirectToDetailsPage(cardNumber) {
+    window.location.href = '(4)person' + cardNumber + '.html';
+  }
+</script>
+</div>
+
+</body>
+</html>

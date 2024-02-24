@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {  
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-container{
+    width: 210px;
+    background: rgb(254, 254, 254);
+    display: inline;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.btn-container a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(74, 15, 15);
+  transition: 0.3s;
+
+}
+
+.btn-container a:hover {
+  color: rgb(49, 46, 46);
+}
+
+.btn-container:hover{
+    background: rgba(171, 164, 164, 0.917);
+    color: white;
+}
+
+.section {
+    background: linear-gradient(black, rgb(92, 29, 29))
+}
+
+.section_container {
+  min-height: 100vh;
+  max-width: 1200px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 3rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.description {
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+  font-size: 20px;
+  
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(400px, 90%);
+  border-radius: 50%;
+  
+}
+
+/* CSS untuk container icon */
+  .icon {
+    display: flex;
+  }
+
+  .icon .linkedin_icon{
+    margin-left: 25px;
+  }
+
+  /* CSS untuk gambar ikon */
+  .icon a {
+    text-decoration: none; 
+  }
+  
+  .icon img {
+    width: 70px; 
+    height: auto;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .icon img:hover {
+    transform: scale(1.2); 
+  }
+  
+
+@media (width < 750px) {
+  .section_container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon img {
+    width: 60px; 
+    height: auto; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out; 
+  }
+}
